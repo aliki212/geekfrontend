@@ -14,6 +14,8 @@
       event.stopPropagation();
       }
       form.classList.add('was-validated');
+      if (form.checkValidity() === true) {
+      alert("Data submitted!")}
       }, false);
       });
       }, false);
@@ -62,20 +64,44 @@
             document.getElementById("myText3").value = "BackEnd";
                 break;
             case "Mary":
-                document.getElementById("myText").value = "Mary";
-                document.getElementById("myText2").value = "Parsons";
-                document.getElementById("myText3").value = "FrontEnd";
+            document.getElementById("myText").value = "Mary";
+            document.getElementById("myText2").value = "Parsons";
+            document.getElementById("myText3").value = "FrontEnd";
                 break;
             case "Clark":
-                document.getElementById("myText").value = "Clark";
-                document.getElementById("myText2").value = "Stevens";
-                document.getElementById("myText3").value = "Security Systems";
+            document.getElementById("myText").value = "Clark";
+            document.getElementById("myText2").value = "Stevens";
+            document.getElementById("myText3").value = "Security Systems";
                     break;
                 case "Claire":
             document.getElementById("myText").value = "Claire";
             document.getElementById("myText2").value = "Fonta";
             document.getElementById("myText3").value = "Development";
-                break;
+                    break;
+                case "Chris":
+            document.getElementById("myText").value = "Chris";
+            document.getElementById("myText2").value = "Vandenberg";
+            document.getElementById("myText3").value = "2000";
+            document.getElementById("myText4").value = "1985-02-22";
+                    break;
+                case "Jess":
+            document.getElementById("myText").value = "Jess";
+            document.getElementById("myText2").value = "Popei";
+            document.getElementById("myText3").value = "1750";
+            document.getElementById("myText4").value = "1984-12-03";
+                    break;
+                case "Stacy":
+            document.getElementById("myText").value = "Stacy";
+            document.getElementById("myText2").value = "Parker";
+            document.getElementById("myText3").value = "1550";
+            document.getElementById("myText4").value = "1987-08-11";
+                    break;
+                    case "Patric":
+            document.getElementById("myText").value = "Patric";
+            document.getElementById("myText2").value = "Calister";
+            document.getElementById("myText3").value = "1700";
+            document.getElementById("myText4").value = "1985-09-25";
+                    break;
             default:
             document.getElementById("myText").value = "Tiltle";
             document.getElementById("myText2").value = "Course Stream";

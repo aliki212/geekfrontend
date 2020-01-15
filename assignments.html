@@ -41,7 +41,6 @@
       <ul class="navbar-nav mx-auto">
         <li class="nav-item px-lg-4">
           <a class="nav-link text-uppercase text-expanded" href="index.html">Home
-            <span class="sr-only">(current)</span>
           </a>
         </li>
         <li class="nav-item px-lg-4">
@@ -50,10 +49,11 @@
         <li class="nav-item px-lg-4 dropdown">
           <a class="nav-link text-uppercase text-expanded dropdown-toggle" data-toggle="dropdown" href="#">Forms Add/Edit</a>
           <div class="dropdown-menu nav-item px-lg-4">
-            <a class="nav-link text-uppercase active text-expanded dropdown-item" href="courses.html">Courses</a>
+            <a class="nav-link text-uppercase  text-expanded dropdown-item" href="courses.html">Courses</a>
             <a class="nav-link text-uppercase text-expanded dropdown-item" href="trainers.html">Trainers</a>
             <a class="nav-link text-uppercase text-expanded dropdown-item" href="students.html">Students</a>
-            <a class="nav-link text-uppercase text-expanded dropdown-item" href="assignments.html">Assignments</a>
+            <a class="nav-link text-uppercase active text-expanded dropdown-item" href="assignments.html">Assignments</a>
+            <span class="sr-only">(current)</span>
           </div>
         </li>
         <li class="nav-item px-lg-4 dropdown">
@@ -81,36 +81,28 @@
             <div class="cta-inner rounded">
               <h2 class="section-heading mb-5 text-center">
                 <span class="section-heading-upper">FORM</span>
-                <span class="section-heading-lower">Courses</span>
+                <span class="section-heading-lower">Assignments</span>
               </h2>
               <div class="ml-5">
                 <p class="lead">Choose one of the following:</p>
 <!--Tabs start-->
                 <div id="tab" class="btn-group" data-toggle="buttons-radio">
-                  <a href="#newCourse1" class="btn btn-large btn-info btn86 active" data-toggle="tab">New Course</a>
-                  <a href="#editExistingCourse" class="btn btn-large btn-info btn86" data-toggle="tab">Edit Existing Course</a>
+                  <a href="#newCourse1" class="btn btn-large btn-info btn86 active" data-toggle="tab">New Assingment</a>
+                  <a href="#editExistingCourse" class="btn btn-large btn-info btn86" data-toggle="tab">Edit Existing Assignment</a>
                 </div>
                 <!--TAB Content Starts-->
                 <div class="tab-content">
                   <!--TAB 1 Add New Course-->
                   <div class="tab-pane active" id="newCourse1">
                     <br><!--Check forms-->
-                    <p class="lead">Input data for new Course</p>
+                    <p class="lead">Input data for new Assignment</p>
                     <!--Form Starts-->
                     <form class="needs-validation mr-6" novalidate>
                       <div class="form-row">
                           <div class="col-md-4 mb-3">
-                          <label>Course Title</label>
-                          <input type="text" class="form-control" id="validationCustom01" placeholder="Course Title" 
+                          <label>Assignment Title</label>
+                          <input type="text" class="form-control" id="validationCustom01" placeholder="Assignment Title" 
                           aria-describedby="inputGroupPrepend" required minlength="3" maxlength="10">
-                              <div class="invalid-feedback">
-                                  Please add more than 2 letters.
-                              </div>
-                          </div>
-                          <div class="col-md-4 mb-3">
-                          <label for="validationCustom02">Course Stream</label>
-                          <input type="text" class="form-control" id="validationCustom02" placeholder="Course Stream" 
-                              required minlength="3" maxlength="10">
                               <div class="invalid-feedback">
                                   Please add more than 2 letters.
                               </div>
@@ -118,32 +110,32 @@
                                   Looks good!
                               </div>
                           </div>
-                          <div class="col-md-4 mb-3">
-                          <label for="validationCustomUsername">Course Type</label>
-                          <input type="text" class="form-control" id="validationCustomUsername" placeholder="Course Type"
-                              aria-describedby="inputGroupPrepend" required minlength="3" maxlength="10">
+                          <div class="col-md-8 mb-3">
+                          <label for="validationCustom02">Assignment Description</label>
+                          <input type="text" class="form-control" id="validationCustom02" placeholder="Assignment Description" 
+                              required minlength="9" maxlength="100">
                               <div class="invalid-feedback">
-                              Please add more than 2 letters.
+                                Please enter from 10 to 100 characters.
+                              </div>
+                              <div class="valid-feedback">
+                                  Looks good!
                               </div>
                           </div>
                       </div>
                       <div class="form-row">
                           <div class="col-md-4 mb-3">
-                              <label for="validationCustom03">Start Date</label>
+                              <label for="validationCustom03">Submission Date</label>
                               <input type="date" class="form-control" id="validationCustom03" placeholder="YYYY-MM-DD" required min="2020-01-13" max="2024-04-24">
                                   <div class="invalid-feedback">
                                       Please provide a date between 16/01/2020 and 24/04/2024.
                                   </div>
+                                  <div class="valid-feedback">
+                                    Looks good!
+                                </div>
                           </div>
                           <div class="col-md-4 mb-3">
-                              <label for="validationCustom04">End Date</label>
-                              <input type="date" class="form-control" id="validationCustom04" placeholder="DD/MM/YYYY" required  min="2020-01-13" max="2024-04-24">
-                                  <div class="invalid-feedback">
-                                      Please provide a date between 16/01/2020 and 24/04/2024.
-                                  </div>
                           </div>
                           <div class="col-md-4 mb-3">
-                          
                           </div>
                       </div>
                       <button class="btn btn-primary btn-sm" type="submit">Submit form</button>
@@ -154,68 +146,56 @@
                         <br>
                         <div class="input-group mb-3">
                           <div class="input-group-prepend">
-                            <label class="input-group-text" for="inputGroupSelect01">Select the course you want to edit</label>
+                            <label class="input-group-text" for="inputGroupSelect01">Select the Assignment you want to edit</label>
                           </div>
                           <select class="custom-select col-md-2" id="inputGroupSelect01" onchange="myFunction(this.value);">
                             <option selected>Choose...</option>
-                            <option data-value="Java">Java</option>
-                            <option data-value="C#">C#</option>
-                            <option data-value="HTML/CSS">HTML/CSS</option>
-                            <option data-value="SoftSkills">SoftSkills</option>
+                            <option data-value="Pizza">Pizza Website</option>
+                            <option data-value="Hospital ERP">Hospital ERP</option>
+                            <option data-value="High School Registry">High School Registry</option>
+                            <option data-value="Furniture E-Shop">Furniture E-Shop</option>
                           </select>
                         </div>
                         <!--Form Starts-->
                       <form class="needs-validation mr-6" novalidate>
                           <div class="form-row">
                               <div class="col-md-4 mb-3">
-                              <label>Course Title</label>
-                              <input type="text" class="form-control" id="myText" placeholder="Course Title" 
+                              <label>Assignment Title</label>
+                              <input type="text" class="form-control" id="myText" placeholder="Assignment Title" 
                               aria-describedby="inputGroupPrepend" required minlength="3" maxlength="10">
                                   <div class="invalid-feedback">
                                       Please add more than 2 letters.
                                   </div>
+                                  <div class="valid-feedback">
+                                    Looks good!
+                                </div>
                               </div>
-                              <div class="col-md-4 mb-3">
-                              <label for="validationCustom02">Course Stream</label>
-                              <input type="text" class="form-control" id="myText2" placeholder="Course Stream" 
-                                  required minlength="3" maxlength="10">
+                              <div class="col-md-8 mb-3">
+                              <label for="validationCustomUsername">Assignment Description</label>
+                              <input type="text" class="form-control" id="myText2" placeholder="Assignment Description"
+                                  aria-describedby="inputGroupPrepend" required minlength="9" maxlength="100">
                                   <div class="invalid-feedback">
-                                      Please add more than 2 letters.
+                                  Please enter from 10 to 100 characters.
                                   </div>
                                   <div class="valid-feedback">
-                                      Looks good!
-                                  </div>
-                              </div>
-                              <div class="col-md-4 mb-3">
-                              <label for="validationCustomUsername">Course Type</label>
-                              <input type="text" class="form-control" id="myText3" placeholder="Course Type"
-                                  aria-describedby="inputGroupPrepend" required minlength="3" maxlength="10">
-                                  <div class="invalid-feedback">
-                                  Please add more than 2 letters.
-                                  </div>
+                                    Looks good!
+                                </div>
                               </div>
                           </div>
                           <div class="form-row">
                               <div class="col-md-4 mb-3">
-                                  <label for="validationCustom03">Start Date</label>
-                                  <input type="date" class="form-control" id="myText4" placeholder="YYYY-MM-DD" required min="2020-01-13" max="2024-04-24">
+                                  <label for="validationCustom03">Submission Date</label>
+                                  <input type="date" class="form-control" id="myText3" placeholder="YYYY-MM-DD" required min="2020-01-13" max="2024-04-24">
                                       <div class="invalid-feedback">
                                           Please provide a date between 16/01/2020 and 24/04/2024.
                                       </div>
+                                      <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
                               </div>
                               <div class="col-md-4 mb-3">
-                                  <label for="validationCustom04">End Date</label>
-                                  <input type="date" class="form-control" id="myText5" placeholder="DD/MM/YYYY" required  min="2020-01-13" max="2024-04-24">
-                                      <div class="invalid-feedback">
-                                          Please provide a date between 16/01/2020 and 24/04/2024.
-                                      </div>
                               </div>
                               <div class="col-md-4 mb-3">
-                              <label for="validationCustom05">Zip</label>
-                              <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
-                              <div class="invalid-feedback">
-                                  Please provide a valid zip.
-                              </div>
                               </div>
                           </div>
                           <button class="btn btn-primary btn-sm" type="submit">Update</button>

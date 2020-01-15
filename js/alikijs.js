@@ -102,10 +102,30 @@
             document.getElementById("myText3").value = "1700";
             document.getElementById("myText4").value = "1985-09-25";
                     break;
+                    case "Pizza Website":
+            document.getElementById("myText").value = "Pizza Website";
+            document.getElementById("myText2").value = "This is a Frontend project about a pizza ordering system.";
+            document.getElementById("myText3").value = "2020-05-01";
+                    break;
+                    case "Hospital ERP":
+            document.getElementById("myText").value = "Hospital ERP";
+            document.getElementById("myText2").value = "BackEnd project for hospital ERP management.";
+            document.getElementById("myText3").value = "2020-07-12";
+                    break;
+                    case "High School Registry":
+            document.getElementById("myText").value = "High School Registry";
+            document.getElementById("myText2").value = "BackEnd project about High School Registry.";
+            document.getElementById("myText3").value = "2020-04-23";
+                    break;
+                    case "Furniture E-Shop":
+            document.getElementById("myText").value = "Furniture E-Shop";
+            document.getElementById("myText2").value = "FrondEnd and BackEnd - Final Project.";
+            document.getElementById("myText3").value = "2020-03-07";
+                    break;
             default:
             document.getElementById("myText").value = "Tiltle";
-            document.getElementById("myText2").value = "Course Stream";
-            document.getElementById("myText3").value = "Course Type";
+            document.getElementById("myText2").value = "Tiltle";
+            document.getElementById("myText3").value = "Tiltle";
             document.getElementById("myText4").value = "YYYY-MM-DD";
             document.getElementById("myText5").value = "YYYY-MM-DD";
             break;

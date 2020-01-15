@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Geek &#124; Interactive Programmer ReSkilling</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/aliki_css.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/ico" href="img/favicon.ico"/>
+
+  </head>
+
+  <body>
+<!--Banner-->
+    <h1 class="site-heading text-white d-none d-lg-block plus row">
+      <img src="img/logo.png" alt="logo" class="col-md-2 offset-md-1"/>
+      <span class="site-heading-lower col-md-7">academy for reskilling</span>
+    </h1>
+<!--Banner End-->
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Start Bootstrap</a><!--for mobile hidden-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item px-lg-4">
+          <a class="nav-link text-uppercase text-expanded" href="index.html">Home
+          </a>
+        </li>
+        <li class="nav-item px-lg-4">
+          <a class="nav-link text-uppercase text-expanded" href="about.html">About</a>
+        </li>
+        <li class="nav-item px-lg-4 dropdown">
+          <a class="nav-link text-uppercase text-expanded dropdown-toggle" data-toggle="dropdown" href="#">Forms Add/Edit</a>
+          <div class="dropdown-menu nav-item px-lg-4">
+            <a class="nav-link text-uppercase  text-expanded dropdown-item" href="courses.html">Courses</a>
+            <a class="nav-link text-uppercase text-expanded dropdown-item" href="trainers.html">Trainers</a>
+            <a class="nav-link text-uppercase text-expanded dropdown-item" href="students.html">Students</a>
+            <a class="nav-link text-uppercase text-expanded dropdown-item" href="assignments.html">Assignments</a>
+            <span class="sr-only">(current)</span>
+          </div>
+        </li>
+        <li class="nav-item px-lg-4 dropdown">
+          <a class="nav-link text-uppercase text-expanded dropdown-toggle" data-toggle="dropdown" href="#">Forms Link Items</a>
+          <div class="dropdown-menu nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded dropdown-item" href="trainerspercourse.html">Trainers per Course</a>
+            <a class="nav-link text-uppercase text-expanded dropdown-item" href="studentspercourse.html">Students per Course</a>
+            <a class="nav-link text-uppercase active text-expanded dropdown-item" href="assignmentspercourse.html">Assignments per Course</a>
+            <a class="nav-link text-uppercase text-expanded dropdown-item" href="assignmentsperstudentpercourse.html">Assignments per Student per Course</a>
+          </div>
+        </li>
+        <li class="nav-item px-lg-4">
+          <a class="nav-link text-uppercase text-expanded" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+ <!-- End Navigation -->
+<!--Main section-->
+    <section class="page-section cta">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <div class="cta-inner rounded">
+              <h2 class="section-heading mb-5 text-center">
+                <span class="section-heading-upper">FORM</span>
+                <span class="section-heading-lower">Assignments Per Course</span>
+              </h2>
+              <div class="ml-5">
+                <p class="lead">Choose the Course and the Assignment you wish to link:</p>
+                    <br><!--Check forms-->
+                    
+                    <!--Form Starts-->
+                    <form class="needs-validation mr-6" novalidate>
+                      <div class="form-row">
+                        <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <label class="input-group-text" for="inputGroupSelect01">Select the course :</label>
+                          </div>
+                          <select class="custom-select col-md-4" id="inputGroupSelect01" >
+                            <option selected>Choose...</option>
+                            <option data-value="Java">Java</option>
+                            <option data-value="C#">C#</option>
+                            <option data-value="HTML/CSS">HTML/CSS</option>
+                            <option data-value="SoftSkills">SoftSkills</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <label class="input-group-text" for="inputGroupSelect01">Select the Assignment you want to link : </label>
+                          </div>
+                          <select class="custom-select col-md-4" id="inputGroupSelect01" >
+                            <option selected>Choose...</option>
+                            <option data-value="Pizza">Pizza Website</option>
+                            <option data-value="Hospital ERP">Hospital ERP</option>
+                            <option data-value="High School Registry">High School Registry</option>
+                            <option data-value="Furniture E-Shop">Furniture E-Shop</option>
+                          </select>
+                        </div>
+                      </div>
+                      <button class="btn btn-primary btn-sm" type="submit">Submit form</button>
+                    </form>
+                  
+              </div><!--div with ml-5 closes-->
+            </div><!--here div ends of cta-inner text-center rounded-->
+          </div><!--div with col-xl-9-mx-auto closes-->
+        </div><!--div with row closes-->
+      </div><!--div with container closes-->
+    </section>
+
+    <section class="page-section about-heading">
+      <div class="container">
+        <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="img/about.jpg" alt="">
+        <div class="about-heading-content">
+          <div class="row">
+            <div class="col-xl-9 col-lg-10 mx-auto">
+              <div class="bg-faded rounded p-5">
+                <h2 class="section-heading mb-4">
+                  <span class="section-heading-upper">Strong Coding, Strong Roots</span>
+                  <span class="section-heading-lower">About Being a geek</span>
+                </h2>
+                <p>Founded in 1987 by the Papadopoulos brothers, our establishment has been serving up academic lessons sourced from the top of the field from various regions of the world, including China and Central America. We are dedicated to travelling the world, finding the best education, and bringing back to you here in our classes.</p>
+                <p class="mb-0">We guarantee that you will fall in
+                  <em>love</em>
+                  with our decadent blends of courses to address your hunger for knowledge. Join us for your latest one-off courses, our three months or six month courses, or drop-in to find out more in person.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer text-faded text-center py-5">
+      <div class="container">
+        <p class="m-0 small">Copyright &copy; Your Website 2018</p>
+      </div>
+    </footer>
+
+    <!-- Core JavaScript -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/alikijs.js"></script>
+  </body>
+  </html>

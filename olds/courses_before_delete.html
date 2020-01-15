@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Geek &#124; Interactive Programmer ReSkilling</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/aliki_css.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/ico" href="img/favicon.ico"/>
+
+  </head>
+
+  <body>
+<!--Banner-->
+    <h1 class="site-heading text-white d-none d-lg-block plus row">
+      <img src="img/logo.png" alt="logo" class="col-md-2 offset-md-1"/>
+      <span class="site-heading-lower col-md-7">academy for reskilling</span>
+    </h1>
+<!--Banner End-->
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Start Bootstrap</a><!--for mobile hidden-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item active px-lg-4">
+          <a class="nav-link text-uppercase text-expanded" href="index.html">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item px-lg-4">
+          <a class="nav-link text-uppercase text-expanded" href="about.html">About</a>
+        </li>
+        <li class="nav-item px-lg-4 dropdown">
+          <a class="nav-link text-uppercase text-expanded dropdown-toggle" data-toggle="dropdown" href="#">Forms Add/Edit</a>
+          <div class="dropdown-menu nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded dropdown-item" href="courses.html">Courses</a>
+            <a class="nav-link text-uppercase text-expanded dropdown-item" href="trainers.html">Trainers</a>
+            <a class="nav-link text-uppercase text-expanded dropdown-item" href="students.html">Students</a>
+            <a class="nav-link text-uppercase text-expanded dropdown-item" href="assignments.html">Assignments</a>
+          </div>
+        </li>
+        <li class="nav-item px-lg-4 dropdown">
+          <a class="nav-link text-uppercase text-expanded dropdown-toggle" data-toggle="dropdown" href="#">Forms Link Items</a>
+          <div class="dropdown-menu nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded dropdown-item" href="trainerspercourse.html">Trainers per Course</a>
+            <a class="nav-link text-uppercase text-expanded dropdown-item" href="studentspercourse.html">Students per Course</a>
+            <a class="nav-link text-uppercase text-expanded dropdown-item" href="assignmentspercourse.html">Assignments per Course</a>
+            <a class="nav-link text-uppercase text-expanded dropdown-item" href="assignmentsperstudentpercourse.html">Assignments per Student per Course</a>
+          </div>
+        </li>
+        <li class="nav-item px-lg-4">
+          <a class="nav-link text-uppercase text-expanded" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+ <!-- End Navigation -->
+<!--Main section-->
+    <section class="page-section cta">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <div class="cta-inner rounded">
+              <h2 class="section-heading mb-5 text-center">
+                <span class="section-heading-upper">FORM</span>
+                <span class="section-heading-lower">Courses</span>
+              </h2>
+              <div class="ml-5">
+                <p class="lead">Choose one of the following:</p>
+<!--Tabs start-->
+                <div id="tab" class="btn-group" data-toggle="buttons-radio">
+                  <a href="#newCourse1" class="btn btn-large btn-info btn86 active" data-toggle="tab">New Course</a>
+                  <a href="#editExistingCourse" class="btn btn-large btn-info btn86" data-toggle="tab">Edit Existing Course</a>
+                  <a href="#requests2" class="btn btn-large btn-info btn86" data-toggle="tab">Requests</a>
+                  <a href="#contact2" class="btn btn-large btn-info btn86"  data-toggle="tab">Contact</a>
+                </div>
+                <!--TAB Content Starts-->
+                <div class="tab-content">
+                  <!--TAB 1 Add New Course-->
+                  <div class="tab-pane active" id="newCourse1">
+                    <br><!--Check forms-->
+                    <p class="lead">Input data for new Course</p>
+                    <!--Form Starts-->
+                    <form class="needs-validation mr-6" novalidate>
+                      <div class="form-row">
+                          <div class="col-md-4 mb-3">
+                          <label >Course Title</label>
+                          <input type="text" class="form-control" id="validationCustom01" placeholder="Course Title" 
+                          aria-describedby="inputGroupPrepend" required minlength="3" maxlength="10">
+                              <div class="invalid-feedback">
+                                  Please add more than 2 letters.
+                              </div>
+                          </div>
+                          <div class="col-md-4 mb-3">
+                          <label for="validationCustom02">Course Stream</label>
+                          <input type="text" class="form-control" id="validationCustom02" placeholder="Course Stream" 
+                              required minlength="3" maxlength="10">
+                              <div class="invalid-feedback">
+                                  Please add more than 2 letters.
+                              </div>
+                              <div class="valid-feedback">
+                                  Looks good!
+                              </div>
+                          </div>
+                          <div class="col-md-4 mb-3">
+                          <label for="validationCustomUsername">Course Type</label>
+                          <input type="text" class="form-control" id="validationCustomUsername" placeholder="Course Type"
+                              aria-describedby="inputGroupPrepend" required minlength="3" maxlength="10">
+                              <div class="invalid-feedback">
+                              Please add more than 2 letters.
+                              </div>
+                          </div>
+                      </div>
+                      <div class="form-row">
+                          <div class="col-md-4 mb-3">
+                              <label for="validationCustom03">Start Date</label>
+                              <input type="date" class="form-control" id="validationCustom03" placeholder="YYYY-MM-DD" required min="2020-01-13" max="2024-04-24">
+                                  <div class="invalid-feedback">
+                                      Please provide a date between 16/01/2020 and 24/04/2024.
+                                  </div>
+                          </div>
+                          <div class="col-md-4 mb-3">
+                              <label for="validationCustom04">End Date</label>
+                              <input type="date" class="form-control" id="validationCustom04" placeholder="DD/MM/YYYY" required  min="2020-01-13" max="2024-04-24">
+                                  <div class="invalid-feedback">
+                                      Please provide a date between 16/01/2020 and 24/04/2024.
+                                  </div>
+                          </div>
+                          <div class="col-md-4 mb-3">
+                          <label for="validationCustom05">Zip</label>
+                          <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
+                          <div class="invalid-feedback">
+                              Please provide a valid zip.
+                          </div>
+                          </div>
+                      </div>
+                      <button class="btn btn-primary btn-sm" type="submit">Submit form</button>
+                    </form>
+                  </div>
+   <!--TAB 2 EDIT COURSE FORM-->
+                  <div class="tab-pane" id="editExistingCourse">
+                        <br>
+                        <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <label class="input-group-text" for="inputGroupSelect01">Select the course you want to edit</label>
+                          </div>
+                          <select class="custom-select col-md-2" id="inputGroupSelect01" onchange="myFunction(this.value);">
+                            <option selected>Choose...</option>
+                            <option data-value="Java">Java</option>
+                            <option data-value="C#">C#</option>
+                            <option data-value="HTML/CSS">HTML/CSS</option>
+                            <option data-value="SoftSkills">SoftSkills</option>
+                          </select>
+                        </div>
+                        <!--Form Starts-->
+                      <form class="needs-validation mr-6" novalidate>
+                          <div class="form-row">
+                              <div class="col-md-4 mb-3">
+                              <label >Course Title</label>
+                              <input type="text" class="form-control" id="myText" placeholder="Course Title" 
+                              aria-describedby="inputGroupPrepend" required minlength="3" maxlength="10">
+                                  <div class="invalid-feedback">
+                                      Please add more than 2 letters.
+                                  </div>
+                              </div>
+                              <div class="col-md-4 mb-3">
+                              <label for="validationCustom02">Course Stream</label>
+                              <input type="text" class="form-control" id="myText2" placeholder="Course Stream" 
+                                  required minlength="3" maxlength="10">
+                                  <div class="invalid-feedback">
+                                      Please add more than 2 letters.
+                                  </div>
+                                  <div class="valid-feedback">
+                                      Looks good!
+                                  </div>
+                              </div>
+                              <div class="col-md-4 mb-3">
+                              <label for="validationCustomUsername">Course Type</label>
+                              <input type="text" class="form-control" id="myText3" placeholder="Course Type"
+                                  aria-describedby="inputGroupPrepend" required minlength="3" maxlength="10">
+                                  <div class="invalid-feedback">
+                                  Please add more than 2 letters.
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="form-row">
+                              <div class="col-md-4 mb-3">
+                                  <label for="validationCustom03">Start Date</label>
+                                  <input type="date" class="form-control" id="myText4" placeholder="YYYY-MM-DD" required min="2020-01-13" max="2024-04-24">
+                                      <div class="invalid-feedback">
+                                          Please provide a date between 16/01/2020 and 24/04/2024.
+                                      </div>
+                              </div>
+                              <div class="col-md-4 mb-3">
+                                  <label for="validationCustom04">End Date</label>
+                                  <input type="date" class="form-control" id="myText5" placeholder="DD/MM/YYYY" required  min="2020-01-13" max="2024-04-24">
+                                      <div class="invalid-feedback">
+                                          Please provide a date between 16/01/2020 and 24/04/2024.
+                                      </div>
+                              </div>
+                              <div class="col-md-4 mb-3">
+                              <label for="validationCustom05">Zip</label>
+                              <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
+                              <div class="invalid-feedback">
+                                  Please provide a valid zip.
+                              </div>
+                              </div>
+                          </div>
+                          <button class="btn btn-primary btn-sm" type="submit">Update</button>
+                      </form>
+                  </div> <!--NECESSARY-->
+                  <!--TAB 3-->
+                  <div class="tab-pane" id="requests2">
+                        <br>
+                    <p class="lead">Requests content</p>
+                    <div class="row">
+                      <form class="needs-validation mr-6" novalidate>
+                        <div class="form-row">
+                            <div class="col-md-4 mb-3">
+                            <label >First name</label>
+                            <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value=""
+                            aria-describedby="inputGroupPrepend" required minlength="3" maxlength="6">
+                                <div class="invalid-feedback">
+                                    Please add more than 2 letters.
+                                    </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                            <label for="validationCustom02">Last name</label>
+                            <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Otto"
+                                required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                            <label for="validationCustomUsername">Username</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                </div>
+                                <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username"
+                                aria-describedby="inputGroupPrepend" required>
+                                <div class="invalid-feedback">
+                                Please choose a username.
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                            <label for="validationCustom03">City</label>
+                            <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid city.
+                            </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                            <label for="validationCustom04">State</label>
+                            <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid state.
+                            </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                            <label for="validationCustom05">Zip</label>
+                            <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid zip.
+                            </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                            <label class="form-check-label" for="invalidCheck">
+                                Agree to terms and conditions
+                            </label>
+                            <div class="invalid-feedback">
+                                You must agree before submitting.
+                            </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-sm" type="submit">Submit form</button>
+                        </form>
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="contact2">
+                        <br>
+                    <p class="lead">Contact Us</p>
+                   
+                    <div class="well span8">
+                      <div class="row">
+                            <div class="span3">
+                                <label>First Name</label>
+                                <input type="text" class="span3" placeholder="Your First Name">
+                                <label>Last Name</label>
+                                <input type="text" class="span3" placeholder="Your Last Name">
+                                <label>Email Address</label>
+                                <input type="text" class="span3" placeholder="Your email address">
+                                <label>Subject
+                                <select id="subject" name="subject" class="span3">
+                                    <option value="na" selected="">Choose One:</option>
+                                    <option value="service">General Customer Service</option>
+                                    <option value="suggestions">Suggestions</option>
+                                    <option value="product">Product Support</option>
+                                </select>
+                                </label>
+                            </div>
+                            <div class="span5">
+                                <label>Message</label>
+                                <textarea name="message" id="message" class="input-xlarge span5" rows="10"></textarea>
+                            </div>
+                        
+                            <button type="submit" class="btn btn-primary pull-right">Send</button>
+                        </div>
+                      </div>
+                  </div>
+                </div><!--TAB Content Closing Tag-->
+              </div><!--div with ml-5 closes-->
+            </div><!--here div ends of cta-inner text-center rounded-->
+          </div><!--div with col-xl-9-mx-auto closes-->
+        </div><!--div with row closes-->
+      </div><!--div with container closes-->
+    </section>
+
+    <section class="page-section about-heading">
+      <div class="container">
+        <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="img/about.jpg" alt="">
+        <div class="about-heading-content">
+          <div class="row">
+            <div class="col-xl-9 col-lg-10 mx-auto">
+              <div class="bg-faded rounded p-5">
+                <h2 class="section-heading mb-4">
+                  <span class="section-heading-upper">Strong Coding, Strong Roots</span>
+                  <span class="section-heading-lower">About Being a geek</span>
+                </h2>
+                <p>Founded in 1987 by the Papadopoulos brothers, our establishment has been serving up academic lessons sourced from the top of the field from various regions of the world, including China and Central America. We are dedicated to travelling the world, finding the best education, and bringing back to you here in our classes.</p>
+                <p class="mb-0">We guarantee that you will fall in
+                  <em>love</em>
+                  with our decadent blends of courses to address your hunger for knowledge. Join us for your latest one-off courses, our three months or six month courses, or drop-in to find out more in person.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer text-faded text-center py-5">
+      <div class="container">
+        <p class="m-0 small">Copyright &copy; Your Website 2018</p>
+      </div>
+    </footer>
+
+    <!-- Core JavaScript -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/alikijs.js"></script>
+  </body>
+  </html>

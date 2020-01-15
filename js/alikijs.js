@@ -32,29 +32,29 @@
         {
             case "Java":
             document.getElementById("myText").value = element;
-            document.getElementById("myText2").value = "Stream1";
-            document.getElementById("myText3").value = "Type1";
+            document.getElementById("myText2").value = "Full Time";
+            document.getElementById("myText3").value = "Foundation";
             document.getElementById("myText4").value = "2020-01-01";
             document.getElementById("myText5").value = "2020-03-01";
             break;
             case "C#":
             document.getElementById("myText").value = element;
-            document.getElementById("myText2").value = "Stream2";
-            document.getElementById("myText3").value = "Type2";
+            document.getElementById("myText2").value = "Full Time";
+            document.getElementById("myText3").value = "Advanced";
             document.getElementById("myText4").value = "2020-02-02";
             document.getElementById("myText5").value = "2020-05-24";
                 break;
                 case "HTML/CSS":
             document.getElementById("myText").value = element;
-            document.getElementById("myText2").value = "Stream3";
-            document.getElementById("myText3").value = "Type3";
+            document.getElementById("myText2").value = "Part-Time";
+            document.getElementById("myText3").value = "Foundation";
             document.getElementById("myText4").value = "2020-03-03";
             document.getElementById("myText5").value = "2020-06-11";
                 break;
                 case "SoftSkills":
             document.getElementById("myText").value = element;
-            document.getElementById("myText2").value = "Stream4";
-            document.getElementById("myText3").value = "Type4";
+            document.getElementById("myText2").value = "Part-Time";
+            document.getElementById("myText3").value = "Advanved";
             document.getElementById("myText4").value = "2021-04-04";
             document.getElementById("myText5").value = "2020-07-22";
                 break;
